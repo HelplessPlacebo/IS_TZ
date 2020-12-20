@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    /*font-family: "Comic Sans MS",cursive;*/
+    font-size: 1rem;
+    background-color: rgba(241, 241, 241, 0.08);
+}
+
+.MainWrapper {
+    display: grid;
+    grid-template-areas: "header" "maincontent";
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.25rem 1fr;
+    height: 100vh;
+}
+
+.Header {
+    grid-area: header;
+    height: 100%;
+}
+
+.Content {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 3%;
+    grid-area: maincontent;
+}
+
