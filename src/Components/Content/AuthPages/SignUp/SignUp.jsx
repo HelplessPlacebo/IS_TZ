@@ -10,8 +10,8 @@ const SignUp = (props) => {
         console.log(formData)
     }
 
-    return <div style={{paddingLeft: "25%", paddingRight: "25%",paddingTop : "10%"}} className="SignUpContainer">
-        <SignUpForRedux onSubmit={handleSubmit} />
+    return <div   className="SignUpContainer">
+        <SignUpForRedux onSubmit={handleSubmit} ComponentIsSignIn={props.ComponentIsSignIn} />
     </div>
 }
 const SignUpForRedux = reduxForm({form: 'SignUpForm'})(SignUpForm)

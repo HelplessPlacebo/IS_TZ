@@ -10,9 +10,9 @@ export const getCartItemsFromLS = () => JSON.parse(localStorage.getItem("CartIte
 export const getOrderPriceFromLS = () => JSON.parse(localStorage.getItem("OrderPrice"))
 
 const CartReducer = (state = DefaultState, action) => {
-    const GetCartItemsCopy = () => {
-        return JSON.parse(JSON.stringify(state.cartItems))
-    }
+    // const GetCartItemsCopy = () => {
+    //     return JSON.parse(JSON.stringify(state.cartItems))
+    // }
     const CalculateOrderPrice = (ItemsArr, currency, CartItem) => {
         let NewOrderPrice = 0
         if (ItemsArr && ItemsArr.length > 0) {

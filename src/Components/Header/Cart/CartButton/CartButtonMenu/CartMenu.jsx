@@ -51,10 +51,10 @@ const CartMenu = (props) => {
                             </Grid>
 
                             <Grid container justify={"center"} alignItems={"center"} style={{paddingTop: "1.5rem"}}>
-                                <Grid item>
+                                <Grid item style={{width : "90%"}}>
                                     <NavLink style={{textDecoration:"none"}} to="/CheckOut">
                                         <CustomizedButton text="Proceed" variant="outlined" fontSize="1.115rem"
-                                                          fontColor="deepOrange" width="23rem"/>
+                                                          fontColor="deepOrange" width="100%"/>
                                     </NavLink>
                                 </Grid>
                             </Grid>

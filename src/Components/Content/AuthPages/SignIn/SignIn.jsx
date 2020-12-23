@@ -1,17 +1,18 @@
-import React from "react"
+import React,{} from "react"
 import {reduxForm} from "redux-form"
-import {useBooleanState} from "../../../hooks/useBooleanState"
 import SignInForm from "./SignInForm";
 
-const SignIn = () => {
-    const ModalInfoState = useBooleanState(false)
+
+const SignIn = (props) => {
     const handleSubmit = (formData) => {
-        ModalInfoState.Show()
+        formData.email === "test@g.com" && formData.password === "test" && localStorage.setItem("isAuth","true")
         console.log(formData)
+        props.onAuth()
+        props.history.push("/Home")
     }
 
-    return <div style={{paddingLeft: "25%", paddingRight: "25%",paddingTop : "10%"}} className="SignInContainer">
-        <SignInFormRedux onSubmit={handleSubmit}/>
+    return <div  className="SignInContainer">
+            <SignInFormRedux onSubmit={handleSubmit} ComponentIsSignUp={props.ComponentIsSignUp}/>
     </div>
 }
 const SignInFormRedux = reduxForm({form: 'LoginInForm'})(SignInForm)

@@ -4,12 +4,14 @@ import {reducer as formReducer} from "redux-form"
 import PizzasReducer from "./PizzasReducer"
 import GlobalReducer from "./GlobalReducer"
 import CartReducer from "./CartReducer"
+import UserReducer from "./UserReducer";
 
 let reducers = combineReducers({
     form : formReducer,
     PizzasData : PizzasReducer,
     GlobalData : GlobalReducer,
-    CartData : CartReducer
+    CartData : CartReducer,
+    UsersData : UserReducer
 })
 
 const store = createStore(reducers)

@@ -5,7 +5,7 @@ import {
     makeStyles,
 } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { green, purple,blue,grey,red,common,teal,yellow,deepOrange,orange,blueGrey,cyan} from '@material-ui/core/colors'
+import { green, purple,blue,grey,red,common,teal,yellow,deepOrange,orange,blueGrey,cyan,indigo} from '@material-ui/core/colors'
 
 
 const findColorObject = (colorName )  =>{
@@ -22,6 +22,7 @@ const findColorObject = (colorName )  =>{
         case "orange" : return orange
         case "blueGrey" : return blueGrey
         case "cyan" : return cyan
+        case "indigo" : return indigo
         default : return common
     }
 
@@ -54,7 +55,8 @@ const findColorObject = (colorName )  =>{
      }))(Button)
 
     const classes = useStyles();
-    return <ColorButton disabled={props.disabled} onClick={props.onClick} color={"inherit"} startIcon={props.startIcon ? props.startIcon : undefined} variant={props.variant}
+    return <ColorButton  disabled={props.disabled} onClick={props.onClick}
+                         color={"inherit"} startIcon={props.startIcon ? props.startIcon : undefined} variant={props.variant}
                           className={classes.margin}>
                 {props.text}
             </ColorButton>

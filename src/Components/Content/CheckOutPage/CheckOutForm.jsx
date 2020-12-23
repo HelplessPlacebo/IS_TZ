@@ -23,7 +23,7 @@ const CheckOutForm = (props) => {
                 </Grid>
 
                 <Grid item>
-                    <Contacts/>
+                    <Contacts />
                 </Grid>
 
                 <Grid item style={{fontSize: "1.275rem", fontWeight: 500, paddingTop: "2rem"}}>

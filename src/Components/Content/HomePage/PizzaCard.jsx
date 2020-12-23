@@ -33,7 +33,7 @@ const PizzaCard = (props) => {
 
         </Grid>
 
-        <Grid container justify={"space-between"} style={{paddingTop: "1rem", paddingBottom: "3rem"}}>
+        <Grid container justify={"space-around"} style={{paddingTop: "1rem", paddingBottom: "2rem"}}>
             <Grid item style={{fontSize: "1.125rem", fontWeight: 500, paddingTop: "1.2rem"}}>
                 { props.CardItem.price[props.currency]}{GetCurrencySymb(props.currency)}
             </Grid>

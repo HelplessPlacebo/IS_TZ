@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import CartButton from "./CartButton";
 import CartMenu from "./CartButtonMenu/CartMenu";
 import CMS from "../cart.module.css";
-import {getCartItemsFromLS} from "../../../../Data/CartReducer";
 
 const CartButtonContainer = (props) => {
     const [CartMenuIsOpen, SetCartMenuIsOpen] = useState(false);
