@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import SignIn from "./SignIn/SignIn";
 import SignUp from "./SignUp/SignUp";
-import Grid from "@material-ui/core/Grid";
 
 const AuthPage  = (props) =>{
     const [ComponentToDraw,SetComponentToDraw] =useState("login")
